@@ -35,6 +35,13 @@ window.onload = function(){
   var sTekst = document.createTextNode('Perl');
   eItem.appendChild(sTekst);
   eLijst.appendChild(eItem);
+
+  /* attributen zetten en wijzigen */
+  var eImg = document.getElementsByTagName('img')[0];
+  eImg.src = "images/elise.jpg";
+  var sTooltip = "Elise, system engineer";
+  eImg.setAttribute("alt",sTooltip);
+  eImg.setAttribute("title", sTooltip);
 }
 </script>
 </head>
