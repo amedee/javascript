@@ -17,6 +17,17 @@ window.onload = function(){
   /* wijzig de titel */
   var eTitel = document.getElementById('kop'); // referentie naar node
   eTitel.innerHTML = "De document tree";
+
+  /* wijzig de tekst van het tweede list item */
+  // eerst verwijderen we het tweede item
+  var eBolletjes = document.getElementsByTagName('li');
+  var nAantal = eBolletjes.length;
+  var e2deItem = eBolletjes[1]; // tweede item
+  e2deItem.removeChild(e2deItem.childNodes[0]);
+
+  // daarna creëren we een nieuw item en voegen dit in
+  var sTekst = document.createTextNode('C#');
+  e2deItem.appendChild(sTekst);
 }
 </script>
 </head>
