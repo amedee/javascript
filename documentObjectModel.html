@@ -43,8 +43,30 @@ window.onload = function(){
   eImg.setAttribute("alt",sTooltip);
   eImg.setAttribute("title", sTooltip);
 
-  /* tekst wijzigen */
+  /* Oefening 1 - tekst wijzigen */
   document.getElementsByTagName('p')[0].innerHTML += " en <em> chocolade</em>";
+
+  /* Oefening 2 - tekst met hyperlink toevoegen */
+  var container = document.getElementById('container');
+  var footerDiv = document.createElement('div');
+  footerDiv.setAttribute('id', 'footer');
+
+  var vdabLink = document.createElement('a');
+  vdabLink.setAttribute('href', 'https://vdab.be');
+  vdabLink.setAttribute('target', '_blank');
+  vdabLinkText = document.createTextNode('VDAB');
+  vdabLink.appendChild(vdabLinkText);
+
+  var footerParagraph = document.createElement('p');
+  text1 = document.createTextNode('Je vindt een job op de ');
+  text2 = document.createTextNode(' website');
+  footerParagraph.appendChild(text1);
+  footerParagraph.appendChild(vdabLink);
+  footerParagraph.appendChild(text2);
+
+  footerDiv.appendChild(footerParagraph);
+
+  container.appendChild(footerDiv);
 }
 </script>
 </head>
