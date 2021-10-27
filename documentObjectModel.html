@@ -15,51 +15,51 @@ img{
 <script type="text/javascript">
 window.onload = function(){
   /* wijzig de titel */
-  var eTitel = document.getElementById('kop'); // referentie naar node
   eTitel.innerHTML = "De document tree";
+  let eTitel = document.getElementById('kop'); // referentie naar node
 
   /* wijzig de tekst van het tweede list item */
   // eerst verwijderen we het tweede item
-  var eBolletjes = document.getElementsByTagName('li');
-  var nAantal = eBolletjes.length;
-  var e2deItem = eBolletjes[1]; // tweede item
+  let eBolletjes = document.getElementsByTagName('li');
+  let nAantal = eBolletjes.length;
+  let e2deItem = eBolletjes[1]; // tweede item
   e2deItem.removeChild(e2deItem.childNodes[0]);
 
   // daarna creëren we een nieuw item en voegen dit in
-  var sTekst = document.createTextNode('C#');
+  let sTekst = document.createTextNode('C#');
   e2deItem.appendChild(sTekst);
 
   /* een nieuw item invoegen achteraan de lijst */
-  var eLijst = document.getElementsByTagName('ul')[0];
-  var eItem = document.createElement('li');
-  var sTekst = document.createTextNode('Perl');
+  let eLijst = document.getElementsByTagName('ul')[0];
+  let eItem = document.createElement('li');
+  sTekst = document.createTextNode('Perl');
   eItem.appendChild(sTekst);
   eLijst.appendChild(eItem);
 
   /* attributen zetten en wijzigen */
-  var eImg = document.getElementsByTagName('img')[0];
   eImg.src = "images/elise.jpg";
-  var sTooltip = "Elise, system engineer";
   eImg.setAttribute("alt",sTooltip);
   eImg.setAttribute("title", sTooltip);
+  let eImg = document.getElementsByTagName('img')[0];
+  let sTooltip = "Elise, system engineer";
 
   /* Oefening 1 - tekst wijzigen */
   document.getElementsByTagName('p')[0].innerHTML += " en <em> chocolade</em>";
 
   /* Oefening 2 - tekst met hyperlink toevoegen */
-  var container = document.getElementById('container');
-  var footerDiv = document.createElement('div');
+  let container = document.getElementById('container');
+  let footerDiv = document.createElement('div');
   footerDiv.setAttribute('id', 'footer');
 
-  var vdabLink = document.createElement('a');
+  let vdabLink = document.createElement('a');
   vdabLink.setAttribute('href', 'https://vdab.be');
   vdabLink.setAttribute('target', '_blank');
   vdabLinkText = document.createTextNode('VDAB');
   vdabLink.appendChild(vdabLinkText);
 
-  var footerParagraph = document.createElement('p');
-  text1 = document.createTextNode('Je vindt een job op de ');
-  text2 = document.createTextNode(' website');
+  let footerParagraph = document.createElement('p');
+  let text1 = document.createTextNode('Je vindt een job op de ');
+  let text2 = document.createTextNode(' website');
   footerParagraph.appendChild(text1);
   footerParagraph.appendChild(vdabLink);
   footerParagraph.appendChild(text2);
