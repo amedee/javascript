@@ -72,6 +72,11 @@ window.onload = function(){
   let divs = document.getElementsByTagName('div');
   let divCount = divs.length;
   console.log('dit document bevat in totaal ' + divCount + ' div elementen');
+
+  /* Opdracht voor de coach */
+  let scienceFictionLink = document.getElementById('sciencefiction');
+  scienceFictionLink.setAttribute('href', 'https://google.com/search?q=science-fiction&tbm=isch');
+  scienceFictionLink.setAttribute('target', '_blank');
 }
 </script>
 </head>
@@ -80,7 +85,7 @@ window.onload = function(){
   <h1 id="kop">Het Document Object Model</h1>
   <!-- dit is HTML commentaar onzichtbaar in het beeld-->
   <p><img src="images/linda.jpg" alt="Linda, een front-end programmeur" />De meeste programmeurs <em>leven</em> op koffie</p>
-  <p>Veel programmeurs zijn liefhebbers van <a href="http://en.wikipedia.org/wiki/Science-fiction">science-fiction</a></p>
+  <p>Veel programmeurs zijn liefhebbers van <a href="http://en.wikipedia.org/wiki/Science-fiction" id="sciencefiction">science-fiction</a></p>
   <div class="menu">
     <h2>Onze programmeertalen</h2>
     <ul>
