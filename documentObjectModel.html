@@ -15,8 +15,8 @@ img{
 <script type="text/javascript">
 window.onload = function(){
   /* wijzig de titel */
-  eTitel.innerHTML = "De document tree";
   let eTitel = document.getElementById('kop'); // referentie naar node
+  eTitel.innerHTML = 'De document tree';
 
   /* wijzig de tekst van het tweede list item */
   // eerst verwijderen we het tweede item
@@ -37,14 +37,14 @@ window.onload = function(){
   eLijst.appendChild(eItem);
 
   /* attributen zetten en wijzigen */
-  eImg.src = "images/elise.jpg";
-  eImg.setAttribute("alt",sTooltip);
-  eImg.setAttribute("title", sTooltip);
   let eImg = document.getElementsByTagName('img')[0];
-  let sTooltip = "Elise, system engineer";
+  eImg.src = 'images/elise.jpg';
+  let sTooltip = 'Elise, system engineer';
+  eImg.setAttribute('alt', sTooltip);
+  eImg.setAttribute('title', sTooltip);
 
   /* Oefening 1 - tekst wijzigen */
-  document.getElementsByTagName('p')[0].innerHTML += " en <em> chocolade</em>";
+  document.getElementsByTagName('p')[0].innerHTML += ' en <em>chocolade</em>';
 
   /* Oefening 2 - tekst met hyperlink toevoegen */
   let container = document.getElementById('container');
