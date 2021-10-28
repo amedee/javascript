@@ -1,7 +1,7 @@
 {
     "indent-width": 2,
     "indent-style": "spaces",
-    "id-class-style": "bem",
+    "id-class-style": "camel",
     "attr-name-style": "dash",
     "tag-bans": ["b", "i"], // allowing "style"
     "attr-bans": ["align", "background", "bgcolor", "border", "frameborder", "longdesc", "marginwidth", "marginheight", "scrolling", "width"], // allowing "style"

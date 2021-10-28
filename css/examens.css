@@ -1,0 +1,9 @@
+label {
+    display: inline-block;
+    width: 6em;
+}
+
+#output {
+    background-color: #CFC;
+    padding: 1em;
+}
