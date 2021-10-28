@@ -46,9 +46,9 @@
         let eInformatica = document.getElementById('informatica');
 
         // de punten
-        let nWisk = eWiskunde.value;
-        let nBoek = eBoekhouden.value;
-        let nInfr = eInformatica.value;
+        let nWisk = parseInt(eWiskunde.value);
+        let nBoek = parseInt(eBoekhouden.value);
+        let nInfr = parseInt(eInformatica.value);
 
         let nTotl = nWisk + nBoek + nInfr;
         let nGmid = nTotl / 3;
