@@ -1,0 +1,22 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Oefeningen van de online cursus van de VDAB",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amedee/javascript.git"
+  },
+  "author": "Amedee Van Gasse 🦄🌈✨ <amedee-github@amedee.be> (they/them)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amedee/javascript/issues"
+  },
+  "homepage": "https://github.com/amedee/javascript#readme",
+  "devDependencies": {
+    "eslint": "^8.1.0"
+  }
+}
