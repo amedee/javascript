@@ -54,7 +54,10 @@ module.exports = {
         'func-call-spacing': 'error',
         'func-name-matching': 'error',
         'func-names': 'off',
-        'func-style': 'error',
+        'func-style': [
+            'error',
+            'declaration'
+        ],
         'function-paren-newline': 'error',
         'generator-star-spacing': 'error',
         'global-require': 'error',
@@ -116,7 +119,11 @@ module.exports = {
         'no-extend-native': 'error',
         'no-extra-bind': 'error',
         'no-extra-label': 'error',
-        'no-extra-parens': 'error',
+        'no-extra-parens': [
+            'error',
+            'all',
+            {'nestedBinaryExpressions': false}
+        ],
         'no-floating-decimal': 'error',
         'no-implicit-coercion': 'error',
         'no-implicit-globals': 'error',
@@ -178,7 +185,10 @@ module.exports = {
         'no-unmodified-loop-condition': 'error',
         'no-unneeded-ternary': 'error',
         'no-unused-expressions': 'error',
-        'no-use-before-define': 'error',
+        'no-use-before-define': [
+            'error',
+            {'functions': false}
+        ],
         'no-useless-call': 'error',
         'no-useless-catch': 'error',
         'no-useless-computed-key': 'error',
@@ -221,7 +231,10 @@ module.exports = {
             'error',
             'single'
         ],
-        'radix': 'error',
+        'radix': [
+            'error',
+            'as-needed'
+        ],
         'require-atomic-updates': 'error',
         'require-await': 'error',
         'require-jsdoc': 'error',
@@ -257,7 +270,10 @@ module.exports = {
             'error',
             'never'
         ],
-        'valid-jsdoc': 'error',
+        'valid-jsdoc': [
+            'error',
+            {'requireReturn': false}
+        ],
         'vars-on-top': 'error',
         'wrap-iife': 'error',
         'wrap-regex': 'error',
