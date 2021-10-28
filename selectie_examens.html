@@ -36,9 +36,8 @@
     let eKnop = document.querySelector('#goKnop');
     eKnop.onclick = evalueer;
 
+    /* evalueert of een student geslaagd is of niet */
     function evalueer() {
-        /* evalueert of een student geslaagd is of niet */
-        console.log('fn evalueer');
 
         // de invulvelden zijn objecten
         let eWiskunde = document.getElementById('wiskunde');
@@ -52,7 +51,6 @@
 
         let nTotl = nWisk + nBoek + nInfr;
         let nGmid = nTotl / 3;
-        console.log('totaal: ' + nTotl + '; gemiddelde:' + nGmid);
 
         // de evaluatie
         let sBericht;
@@ -67,7 +65,9 @@
             sBericht = 'U bent NIET geslaagd';
         }
 
-        console.log(sBericht);
+        //output naar div
+        let eOutput = document.querySelector('#output');
+        eOutput.innerHTML = sBericht;
     }
 </script>
 </body>
