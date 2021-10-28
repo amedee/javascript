@@ -34,3 +34,5 @@ function deling (nGetal1, nGetal2) {
     return nGetal2 / nGetal1;
 
 }
+
+module.exports = deling;

@@ -4,7 +4,7 @@
   "description": "Oefeningen van de online cursus van de VDAB",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/amedee/javascript#readme",
   "devDependencies": {
-    "eslint": "^8.1.0"
+    "eslint": "^8.1.0",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1"
   }
 }
