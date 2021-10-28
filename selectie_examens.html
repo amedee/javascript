@@ -52,13 +52,17 @@
 
         let nTotl = nWisk + nBoek + nInfr;
         let nGmid = nTotl / 3;
-
-        console.log('totaal: ' + nTotl);
+        console.log('totaal: ' + nTotl + '; gemiddelde:' + nGmid);
 
         // de evaluatie
         let sBericht;
         if ((nWisk >= 6 && nBoek + nInfr >= 12) || nInfr == 10) {
             sBericht = 'U bent geslaagd';
+            if (nGmid >= 7) {
+                sBericht += ' met onderscheiding';
+            } else {
+                sBericht += ' met voldoening';
+            }
         } else {
             sBericht = 'U bent NIET geslaagd';
         }
