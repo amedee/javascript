@@ -11,7 +11,7 @@ window.onload = function () {
 function berekenDeling () {
     let getal1 = parseInt(document.getElementById('getal1').value);
     let getal2 = parseInt(document.getElementById('getal2').value);
-    if (getal1 === 0 || getal2 === 0) {
+    if (getal2 === 0 || getal1 === 0) {
         alert('Ik kan niet delen door 0.'); // eslint-disable-line no-alert
         document.querySelector('#output').innerHTML = '';
     } else {
