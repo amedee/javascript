@@ -31,7 +31,7 @@ repos:
       - id: markdownlint
 
   - repo: https://github.com/sirosen/check-jsonschema
-    rev: 0.5.1
+    rev: 0.6.0
     hooks:
       - id: check-jsonschema
         name: "Check GitHub Workflows"
@@ -51,14 +51,15 @@ repos:
       - id: htmllint
 
   - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: 'v8.1.0'
+    rev: 'v8.2.0'
     hooks:
       - id: eslint
 
-  - repo: https://github.com/pre-commit/mirrors-csslint
-    rev: 'v1.0.5'
+  - repo: https://github.com/awebdeveloper/pre-commit-stylelint
+    rev: '0.0.2'
     hooks:
-      - id: csslint
+      - id: stylelint
+        additional_dependencies: ['stylelint@14.0.1', 'stylelint-config-recommended@6.0.0']
 
   - repo: https://github.com/Lucas-C/pre-commit-hooks-lxml
     rev: 'v1.1.0'
