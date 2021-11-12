@@ -17,6 +17,9 @@ let toeslagFactorLoon = maandloon => {
     if (maandloon <= 500) {
         toeslagFactor = 1.25;
     }
+    if (maandloon > 2000) {
+        toeslagFactor = 0.55;
+    }
 
     return toeslagFactor;
 };
@@ -26,8 +29,10 @@ let toeslagFactorLoon = maandloon => {
  * @param {number} maandloon Wat is het maandloon van de moeder
  * @returns {number} Het kindergeld waar de moeder recht op heeft
  */
-function berekenKindergeld (aantalKinderen, maandloon) {
-    return basisKindergeld(aantalKinderen) * toeslagFactorLoon(maandloon);
-}
+let berekenKindergeld = (aantalKinderen, maandloon) =>
+    Math.max(
+        basisKindergeld(aantalKinderen) * toeslagFactorLoon(maandloon),
+        defaultUitkering(aantalKinderen)
+    );
 
 module.exports = {berekenKindergeld}
