@@ -10,6 +10,7 @@ describe('Berekening kindergeld', () => {
     ${4}           | ${1000}   | ${125}
     ${5}           | ${1000}   | ${170}
     ${6}           | ${1000}   | ${215}
+    ${1}           | ${500}    | ${31.25}
   `('should return $kindergeld for $aantalKinderen children and $maandloon income', ({
         aantalKinderen, maandloon, kindergeld
     }) => {
