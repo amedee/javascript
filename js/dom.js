@@ -55,7 +55,7 @@ window.onload = function () {
     /* Oefening 3 - console.log */
     let divs = document.getElementsByTagName('div');
     let divCount = divs.length;
-    console.log('dit document bevat in totaal ' + divCount + ' div elementen');
+    console.log('dit document bevat in totaal ' + divCount + ' div elementen'); // eslint-disable-line no-console
 
     /* Opdracht voor de coach */
     let scienceFictionLink = document.getElementById('sciencefiction');

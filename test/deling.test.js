@@ -1,4 +1,5 @@
 const deling = require('../js/deling');
+
 describe('dividing larger number by smaller number', () => {
     test('divide 10 and 5 to equal 2', () => {
         expect(deling(10, 5)).toBe(2);
