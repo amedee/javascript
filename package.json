@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/amedee/javascript#readme",
   "devDependencies": {
+    "@jest/globals": "^27.3.1",
     "eslint": "^8.1.0",
     "eslint-plugin-jest": "^25.2.2",
     "jest": "^27.3.1",
