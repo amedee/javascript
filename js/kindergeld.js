@@ -14,10 +14,15 @@ let uitkeringVanafVijfdeKind = aantalKinderen =>
  * @param {number} maandloon Wat is het maandloon van de moeder
  * @returns {number} Het kindergeld waar de moeder recht op heeft
  */
-function berekenKindergeld (aantalKinderen, maandloon) { // eslint-disable-line no-unused-vars
-    return defaultUitkering(aantalKinderen) +
+function berekenKindergeld (aantalKinderen, maandloon) {
+    let toeslagLoon = 1;
+    if (maandloon <= 500) {
+        toeslagLoon = 1.25;
+    }
+
+    return (defaultUitkering(aantalKinderen) +
         uitkeringVanafDerdeKind(aantalKinderen) +
-        uitkeringVanafVijfdeKind(aantalKinderen);
+        uitkeringVanafVijfdeKind(aantalKinderen)) * toeslagLoon;
 }
 
 module.exports = {berekenKindergeld}
