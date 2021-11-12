@@ -5,6 +5,7 @@ describe('Berekening kindergeld', () => {
     it.each`
     aantalKinderen | maandloon | kindergeld
     ${1}           | ${1000}   | ${25}
+    ${2}           | ${1000}   | ${50}
   `('should return $kindergeld for $aantalKinderen children and $maandloon income', ({
         aantalKinderen, maandloon, kindergeld
     }) => {
