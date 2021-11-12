@@ -9,6 +9,7 @@ describe('Berekening kindergeld', () => {
     ${3}           | ${1000}   | ${87.5}
     ${4}           | ${1000}   | ${125}
     ${5}           | ${1000}   | ${170}
+    ${6}           | ${1000}   | ${215}
   `('should return $kindergeld for $aantalKinderen children and $maandloon income', ({
         aantalKinderen, maandloon, kindergeld
     }) => {
@@ -17,7 +18,7 @@ describe('Berekening kindergeld', () => {
 
     it('should be verified with the previous snapshot', () => {
         expect(berekenKindergeld).toVerifyAllCombinations(
-            [1, 2, 3, 4, 5],
+            [1, 2, 3, 4, 5, 6],
             [1000]
         );
     });
