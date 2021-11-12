@@ -17,7 +17,7 @@ describe('Berekening kindergeld', () => {
 
     it('should be verified with the previous snapshot', () => {
         expect(berekenKindergeld).toVerifyAllCombinations(
-            [1, 2, 3, 4],
+            [1, 2, 3, 4, 5],
             [1000]
         );
     });
