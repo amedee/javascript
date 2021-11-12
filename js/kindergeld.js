@@ -24,15 +24,18 @@ let toeslagFactorLoon = maandloon => {
     return toeslagFactor;
 };
 
+let round = num =>
+    Math.round(Number((Math.abs(num) * 100).toPrecision(15))) / 100 * Math.sign(num);
+
 /**
  * @param {number} aantalKinderen Hoeveel kinderen heeft de moeder ten laste
  * @param {number} maandloon Wat is het maandloon van de moeder
  * @returns {number} Het kindergeld waar de moeder recht op heeft
  */
 let berekenKindergeld = (aantalKinderen, maandloon) =>
-    Math.max(
+    round(Math.max(
         basisKindergeld(aantalKinderen) * toeslagFactorLoon(maandloon),
         defaultUitkering(aantalKinderen)
-    );
+    ));
 
 module.exports = {berekenKindergeld}
