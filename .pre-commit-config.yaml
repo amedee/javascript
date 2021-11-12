@@ -70,6 +70,6 @@ repos:
           - --css-files-dir
           - css
           - --html-files-dir
-          - .
+          - html
       - id: html-tags-blacklist
       - id: html-attributes-blacklist
