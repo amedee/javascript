@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Berekening kindergeld should be verified with the previous snapshot 1`] = `
+Object {
+  "1,1000": 25,
+}
+`;
