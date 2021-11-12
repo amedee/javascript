@@ -1,6 +1,8 @@
 const defaultKindergeld = 25;
 const toeslag3deKind = 12.5;
 const toeslag5deKind = 7.5;
+const lageLoongrens = 500;
+const hogeLoongrens = 2000;
 
 let defaultUitkering = aantalKinderen =>
     defaultKindergeld * aantalKinderen;
@@ -14,10 +16,10 @@ let basisKindergeld = aantalKinderen =>
     uitkeringVanafVijfdeKind(aantalKinderen);
 let toeslagFactorLoon = maandloon => {
     let toeslagFactor = 1;
-    if (maandloon <= 500) {
+    if (maandloon <= lageLoongrens) {
         toeslagFactor = 1.25;
     }
-    if (maandloon > 2000) {
+    if (maandloon > hogeLoongrens) {
         toeslagFactor = 0.55;
     }
 
