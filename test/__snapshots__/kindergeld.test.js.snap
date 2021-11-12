@@ -3,5 +3,6 @@
 exports[`Berekening kindergeld should be verified with the previous snapshot 1`] = `
 Object {
   "1,1000": 25,
+  "2,1000": 50,
 }
 `;
