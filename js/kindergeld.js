@@ -4,7 +4,7 @@
  * @returns {number} Het kindergeld waar de moeder recht op heeft
  */
 function berekenKindergeld (aantalKinderen, maandloon) { // eslint-disable-line no-unused-vars
-    return 0;
+    return 25;
 }
 
 module.exports = {berekenKindergeld}
